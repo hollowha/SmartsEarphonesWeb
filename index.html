@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 7 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/smart-earphones-logo.png" alt="" />
+          <!-- Change logo to match the product -->
+          <span class="d-none d-lg-block">SmartSense Earphones</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search stress tips"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- Notifications related to user's health data and updates -->
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span>
+            </a>
+            <!-- Start of Notification Dropdown Items -->
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new health updates
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <!-- Example notification -->
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>High Stress Detected</h4>
+                  <p>Consider taking a short break or meditating.</p>
+                  <p>10 min ago</p>
+                </div>
+              </li>
+              <!-- Add other notifications -->
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span>
+            </a>
+            <!-- Start of Messages Dropdown Items -->
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <!-- Example message -->
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/profile-img.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Health Coach Lisa</h4>
+                    <p>Your weekly stress summary is ready.</p>
+                    <p>2 hrs ago</p>
+                  </div>
+                </a>
+              </li>
+              <!-- Add other messages -->
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <!-- Profile Nav -->
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              >
+            </a>
+            <!-- Start of Profile Dropdown Items -->
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+                <span>Health Enthusiast</span>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i><span>My Health Dashboard</span>
+                </a>
+              </li>
+              <!-- Additional options -->
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i><span>Need Help?</span>
+                </a>
+              </li>
+              <!-- End Profile Dropdown Items -->
+            </ul>
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <!-- Dashboard modified for quick health overview -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-speedometer2"></i>
+            <span>Health Dashboard</span>
+          </a>
+        </li>
+
+        <!-- Renamed 'Components' to 'Stress Management Tools' -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#stress-tools-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-life-preserver"></i
+            ><span>Stress Management Tools</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="stress-tools-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="tools-breathing-exercises.html">
+                <i class="bi bi-circle"></i><span>Breathing Exercises</span>
+              </a>
+            </li>
+            <li>
+              <a href="tools-meditation.html">
+                <i class="bi bi-circle"></i><span>Meditation</span>
+              </a>
+            </li>
+            <li>
+              <a href="tools-sleep-quality.html">
+                <i class="bi bi-circle"></i><span>Sleep Quality</span>
+              </a>
+            </li>
+            <li>
+              <a href="tools-stress-levels.html">
+                <i class="bi bi-circle"></i><span>Stress Levels</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Adding 'Earphone Settings' for device configuration -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#earphone-settings-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-gear-fill"></i><span>Earphone Settings</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="earphone-settings-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="settings-audio.html">
+                <i class="bi bi-circle"></i><span>Audio Calibration</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings-sensors.html">
+                <i class="bi bi-circle"></i><span>Sensor Adjustments</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Adjusted 'Forms' to 'Feedback & Improvement' -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#feedback-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-input-cursor-text"></i
+            ><span>Feedback & Improvement</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="feedback-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="feedback-user.html">
+                <i class="bi bi-circle"></i><span>User Feedback</span>
+              </a>
+            </li>
+            <li>
+              <a href="feedback-improvements.html">
+                <i class="bi bi-circle"></i><span>Suggested Improvements</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Contact modified to include support options -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Support</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            <div class="row">
+              <!-- Stress Level Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card custom-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter Timeframe</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Stress Level <span>| Today</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-heart-pulse"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>High</h6>
+                        <span class="text-danger small pt-1 fw-bold"
+                          >Increased</span
+                        >
+                        <span class="text-muted small pt-2 ps-1"
+                          >stress detected</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Stress Level Card -->
+
+              <!-- Biofeedback Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card biofeedback-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter Timeframe</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Biofeedback <span>| This Month</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-activity"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>Improved</h6>
+                        <span class="text-success small pt-1 fw-bold">12%</span>
+                        <span class="text-muted small pt-2 ps-1"
+                          >better response</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Biofeedback Card -->
+
+              <!-- User Engagement Card -->
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card user-engagement-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter Engagement</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      User Engagement <span>| This Month</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-heart-pulse"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>12,440 Users</h6>
+                        <span class="text-success small pt-1 fw-bold">18%</span>
+                        <span class="text-muted small pt-2 ps-1"
+                          >increase in active users</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End User Engagement Card -->
+
+              <!-- Reports -->
+              <div class="col-12">
+                <div class="card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter Data</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Health Reports <span>| Today</span>
+                    </h5>
+
+                    <!-- Line Chart -->
+                    <div id="healthReportsChart"></div>
+
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                        const maxPhysical = 7000; // Assuming the maximum expected physical activity
+                        new ApexCharts(
+                          document.querySelector("#healthReportsChart"),
+                          {
+                            series: [
+                              {
+                                name: "Stress Level",
+                                data: [20, 25, 30, 35, 28, 32, 34].map(
+                                  (x) => (x / 100) * 100
+                                ), // Assuming these are already in percentage
+                              },
+                              {
+                                name: "Physical Activity",
+                                data: [
+                                  5000, 7000, 6500, 5000, 5500, 6000, 7000,
+                                ].map((x) => (x / maxPhysical) * 100),
+                              },
+                              {
+                                name: "Sleep Quality",
+                                data: [75, 80, 65, 90, 70, 85, 80], // Assuming these values are percentages
+                              },
+                            ],
+                            chart: {
+                              height: 350,
+                              type: "area",
+                              toolbar: {
+                                show: false,
+                              },
+                            },
+                            markers: {
+                              size: 4,
+                            },
+                            colors: ["#ff4560", "#008ffb", "#00e396"],
+                            fill: {
+                              type: "gradient",
+                              gradient: {
+                                shadeIntensity: 1,
+                                opacityFrom: 0.3,
+                                opacityTo: 0.4,
+                                stops: [0, 90, 100],
+                              },
+                            },
+                            dataLabels: {
+                              enabled: false,
+                            },
+                            stroke: {
+                              curve: "smooth",
+                              width: 2,
+                            },
+                            xaxis: {
+                              type: "datetime",
+                              categories: [
+                                "2023-01-01T00:00:00.000Z",
+                                "2023-01-02T00:00:00.000Z",
+                                "2023-01-03T00:00:00.000Z",
+                                "2023-01-04T00:00:00.000Z",
+                                "2023-01-05T00:00:00.000Z",
+                                "2023-01-06T00:00:00.000Z",
+                                "2023-01-07T00:00:00.000Z",
+                              ],
+                            },
+                            yaxis: {
+                              labels: {
+                                formatter: function (value) {
+                                  return value.toFixed(0) + "%"; // Rounds the number to 0 decimal places
+                                },
+                              },
+                            },
+                            tooltip: {
+                              x: {
+                                format: "dd/MM/yy",
+                              },
+                            },
+                          }
+                        ).render();
+                      });
+                    </script>
+                    <!-- End Line Chart -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Reports -->
+
+              <!-- Recent User Insights -->
+              <div class="col-12">
+                <div class="card recent-insights overflow-auto">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Recent User Insights <span>| This Week</span>
+                    </h5>
+
+                    <table class="table table-borderless datatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">User</th>
+                          <th scope="col">Insight Type</th>
+                          <th scope="col">Value</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><a href="#">#2457</a></th>
+                          <td>Brandon Jacob</td>
+                          <td>
+                            <a href="#" class="text-primary">Stress Level</a>
+                          </td>
+                          <td>High</td>
+                          <td>
+                            <span class="badge bg-warning"
+                              >Attention Needed</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2147</a></th>
+                          <td>Bridie Kessler</td>
+                          <td>
+                            <a href="#" class="text-primary">Sleep Quality</a>
+                          </td>
+                          <td>80%</td>
+                          <td><span class="badge bg-success">Good</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2049</a></th>
+                          <td>Ashleigh Langosh</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >Physical Activity</a
+                            >
+                          </td>
+                          <td>Low</td>
+                          <td>
+                            <span class="badge bg-warning"
+                              >Improvement Needed</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2644</a></th>
+                          <td>Angus Grady</td>
+                          <td>
+                            <a href="#" class="text-primary">Heart Rate</a>
+                          </td>
+                          <td>92 bpm</td>
+                          <td><span class="badge bg-success">Normal</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2644</a></th>
+                          <td>Raheem Lehner</td>
+                          <td>
+                            <a href="#" class="text-primary">Stress Feedback</a>
+                          </td>
+                          <td>Improved</td>
+                          <td>
+                            <span class="badge bg-success">Positive</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- End Recent User Insights -->
+
+              <!-- Top Stress Management Tools -->
+              <div class="col-12">
+                <div class="card top-tools overflow-auto">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body pb-0">
+                    <h5 class="card-title">
+                      Top Stress Management Tools <span>| This Month</span>
+                    </h5>
+
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Preview</th>
+                          <th scope="col">Feature</th>
+                          <th scope="col">Engagement</th>
+                          <th scope="col">Effectiveness</th>
+                          <th scope="col">User Feedback</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a
+                              href="tools-breathing-exercises.html"
+                              class="text-primary fw-bold"
+                              >Guided Breathing Exercises</a
+                            >
+                          </td>
+                          <td class="fw-bold">High</td>
+                          <td>95%</td>
+                          <td>Positive</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="tools-meditation.html"
+                              class="text-primary fw-bold"
+                              >Mindfulness Meditation</a
+                            >
+                          </td>
+                          <td class="fw-bold">Medium</td>
+                          <td>92%</td>
+                          <td>Positive</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="tools-sleep-quality.html"
+                              class="text-primary fw-bold"
+                              >Sleep Quality</a
+                            >
+                          </td>
+                          <td class="fw-bold">Low</td>
+                          <td>88%</td>
+                          <td>Mixed</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="tools-stress-levels.html"
+                              class="text-primary fw-bold"
+                              >Daily Stress Level Monitoring</a
+                            >
+                          </td>
+                          <td class="fw-bold">Very High</td>
+                          <td>98%</td>
+                          <td>Highly Positive</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- End Top Stress Management Tools -->
+            </div>
+          </div>
+          <!-- End Left side columns -->
+
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+            <!-- Daily Health Insights -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-three-dots"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter Insights</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Week</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Daily Health Insights <span>| Today</span>
+                </h5>
+                <!-- List recent activities like meditation, stress levels etc. -->
+                <div class="activity">
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">10 min ago</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-success align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Completed morning meditation session
+                    </div>
+                  </div>
+                  <!-- More activity items -->
+                </div>
+              </div>
+            </div>
+            <!-- End Daily Health Insights -->
+
+            <!-- Stress Level Trends -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-three-dots"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter Trends</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Week</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+                </ul>
+              </div>
+              <div class="card-body pb-0">
+                <h5 class="card-title">
+                  Stress Level Trends <span>| This Week</span>
+                </h5>
+                <!-- Visualization for stress levels -->
+                <div
+                  id="stressLevelChart"
+                  style="min-height: 400px"
+                  class="echart"
+                ></div>
+                <!-- Script for generating chart -->
+                <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+                    var stressChart = echarts.init(
+                      document.getElementById("stressLevelChart")
+                    );
+                    var option = {
+                      tooltip: {
+                        trigger: "axis",
+                      },
+                      legend: {
+                        data: ["Stress Level"],
+                      },
+                      grid: {
+                        left: "3%",
+                        right: "4%",
+                        bottom: "3%",
+                        containLabel: true,
+                      },
+                      toolbox: {
+                        feature: {
+                          saveAsImage: {},
+                        },
+                      },
+                      xAxis: {
+                        type: "category",
+                        boundaryGap: false,
+                        data: [
+                          "Monday",
+                          "Tuesday",
+                          "Wednesday",
+                          "Thursday",
+                          "Friday",
+                          "Saturday",
+                          "Sunday",
+                        ],
+                      },
+                      yAxis: {
+                        type: "value",
+                      },
+                      series: [
+                        {
+                          name: "Stress Level",
+                          type: "line",
+                          stack: "Total",
+                          data: [120, 132, 101, 134, 90, 230, 210],
+                          areaStyle: {},
+                        },
+                      ],
+                    };
+                    stressChart.setOption(option);
+                  });
+                </script>
+              </div>
+            </div>
+            <!-- End Stress Level Trends -->
+
+            <!-- Health News & Tips -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-three-dots"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Week</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                </ul>
+              </div>
+              <div class="card-body pb-0">
+                <h5 class="card-title">
+                  Health News & Tips <span>| This Week</span>
+                </h5>
+                <div class="news">
+                  <!-- Detailed news and tips related to stress management and health -->
+                  <div class="post-item clearfix">
+                    <img
+                      src="https://d2jx2rerrg6sh3.cloudfront.net/images/Article_Images/ImageForArticle_23295_16680815010862881.jpg"
+                      alt=""
+                    />
+                    <h4>
+                      <a
+                        href="https://digitalsalutem.com/technology-in-mental-health-treatments/"
+                        >How to Use Technology to Improve Your Mental Health</a
+                      >
+                    </h4>
+                    <p>
+                      This guide explains how to leverage technology,
+                      specifically your smart sensing earphones, to better
+                      understand and manage your mental health. It includes
+                      information on tracking stress levels and receiving
+                      real-time feedback on your emotional state.
+                    </p>
+                  </div>
+                  <div class="post-item clearfix">
+                    <img
+                      src="https://activenation.org.uk/wp-content/uploads/2020/02/06-Body-Positivy-Locker-1.jpg"
+                      alt=""
+                    />
+                    <h4>
+                      <a
+                        href="https://www.psycom.net/mindfulness-for-the-busy-schedule"
+                        >Mindfulness Techniques for a Busy Life</a
+                      >
+                    </h4>
+                    <p>
+                      Learn mindfulness techniques that can be easily
+                      incorporated into your daily routine to help manage
+                      stress. This section includes interactive sessions
+                      available through your smart earphones that guide you
+                      through mindfulness exercises during your day.
+                    </p>
+                  </div>
+                  <div class="post-item clearfix">
+                    <img
+                      src="https://online.csp.edu/wp-content/uploads/2020/06/csp_article_work-stress_header.jpg"
+                      alt=""
+                    />
+                    <h4>
+                      <a
+                        href="https://my.clevelandclinic.org/health/articles/11874-stress"
+                        >Understanding Stress: Signs and Solutions</a
+                      >
+                    </h4>
+                    <p>
+                      Learn to recognize the early signs of stress, such as
+                      irritability, fatigue, and difficulty concentrating.
+                      Explore practical methods for stress management, including
+                      guided meditation techniques and structured relaxation
+                      exercises provided through your smart earphones.
+                    </p>
+                  </div>
+                  <div class="post-item clearfix">
+                    <img
+                      src="https://www.collegenp.com/uploads/2023/07/Physical-Activity.jpg"
+                      alt=""
+                    />
+                    <h4>
+                      <a
+                        href="https://adaa.org/understanding-anxiety/related-illnesses/other-related-conditions/stress/physical-activity-reduces-st"
+                        >The Role of Physical Activity in Stress Reduction</a
+                      >
+                    </h4>
+                    <p>
+                      Discover how regular physical activity can lower stress
+                      levels and improve your overall mental health. Learn about
+                      specific exercises that can be tracked and enhanced
+                      through your smart earphones, integrating biometric data
+                      to optimize your workout.
+                    </p>
+                  </div>
+                  <div class="post-item clearfix">
+                    <img
+                      src="https://news.nd.edu/assets/509360/fullsize/purple_woman_stress_sleep_graphic.jpg"
+                      alt=""
+                    />
+                    <h4>
+                      <a
+                        href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/depression-and-sleep-understanding-the-connection"
+                        >Sleep and Stress: Understanding the Connection</a
+                      >
+                    </h4>
+                    <p>
+                      Explore the impact of stress on sleep quality and how
+                      improving sleep can reduce stress. This article provides
+                      tips on using features in your smart earphones to monitor
+                      sleep patterns and advice on routines that promote better
+                      sleep hygiene.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Health News & Tips -->
+          </div>
+          <!-- End Right side columns -->
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-lg-start text-center">
+            <div class="copyright">
+              &copy; 2023 <strong><span>SmartSense Earphones</span></strong
+              >. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- Tips or links related to the earphone's usage or health advice can be added here if needed -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="footer-links text-lg-end text-center pt-2 pt-lg-0">
+              <a href="#hero" class="scrollto">Home</a>
+              <a href="#about" class="scrollto">About</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
